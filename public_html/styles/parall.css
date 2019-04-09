@@ -1,0 +1,136 @@
+/* ------------------- PARALLAX -------------------- */
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("../img/bground1.jpg");
+  min-height: 900px;
+}
+
+.bgimg-2 {
+  background-image: url("../img/bground2.jpg");
+  min-height: 500px;
+}
+
+.bgimg-3 {
+  background-image: url("../img/bground3.jpg");
+  min-height: 500px;
+}
+.bgimg-4 {
+  background-image: url("../img/bground4.jpg");
+  min-height: 500px;
+}
+
+.bgimg-5 {
+  background-image: url("../img/bground5.jpg");
+  min-height: 500px;
+}
+
+.bgimg-6 {
+  background-image: url("../img/bground6.jpg");
+  min-height: 500px;
+}
+
+.bgimg-7 {
+  background-image: url("../img/bground7.jpg");
+  min-height: 500px;
+}
+
+.bgimg-8 {
+  background-image: url("../img/bground8.jpg");
+  min-height: 900px;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+
+}
+
+.caption span.border {
+  background-color: rgba(64,64,64,0.5);
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 2.5;
+  letter-spacing: 0.5rem;
+  font-family: 'Playfair Display', serif;
+}
+span.border2 {
+    background-color:transparent;
+    color: #ffffe6;
+    padding: 0.5rem 10%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 2.5;
+    letter-spacing: 0.5rem;
+    font-family: 'Playfair Display', serif;
+
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: #111;
+
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-width: 1200px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+/* --------------------------------------------- */
+.parall {
+    color: #777;
+    background-color:white;
+    text-align:center;
+    padding:2rem 20rem;
+    text-align: justify;
+}
+.parallDark {
+    color: #ddd;
+    background-color: #282E34;
+    text-align:center;
+    padding:2rem 20rem;
+    text-align: justify;
+}
+@media screen and (max-width: 1400px) {
+     .parall, .parallDark {
+      padding: 2rem 10rem;
+  }
+  
+
+}
+
+@media screen and (max-width: 900px) {
+     .parall, .parallDark {
+      padding: 2rem 4rem;
+  }
+  .caption span.border {
+  font-size: 0.9rem;
+  line-height: 2.0;
+  letter-spacing: 0.3rem;
+  font-family: 'Playfair Display', serif;
+}
+}
+
+@media screen and (max-width: 900px) {
+     .parall, .parallDark {
+      padding: 2rem;
+  }
+ 
+}
